@@ -190,6 +190,83 @@
         .buy-button:active {
             opacity: 0.7;
         }
+
+        .page-button {
+            background-color: rgb(231, 231, 231);
+            border-radius: 2px;
+            border-style: solid;
+            border-width: 1px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .page-link {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .stretch-button {
+            background-color: rgb(0, 151, 0);
+            color: white;
+            font-weight: bold;
+            border: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: padding 1s;
+        }
+
+        .stretch-button:hover {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .shadow-button {
+            background-color: rgb(0, 151, 0);
+            color: white;
+            font-weight: bold;
+            border: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.15s;
+        }
+
+        .shadow-button:active {
+            box-shadow: none;
+        }
+
+        .number-button {
+            background-color: rgb(0, 151, 0);
+            color: white;
+            font-weight: bold;
+            border: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: padding 0.15s, margin 0.15s;
+        }
+
+        .number-button:hover {
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
     </style>
 </head>
 
@@ -218,6 +295,26 @@
     <p>Free delivery tomorrow.</p>
     <button class="cart-button2">Add to Cart</button>
     <button class="buy-button">Buy now</button>
+    <br>
+    <!-- 4h -->
+    <button class="page-button">Back</button>
+    <a href="#" class="page-link">1</a>
+    <a href="#" class="page-link">2</a>
+    <a href="#" class="page-link">3</a>
+    <a href="#" class="page-link">4</a>
+    <a href="#" class="page-link">5</a>
+    <button class="page-button">Next</button>
+    <br>
+    <!-- 4i -->
+    <button class="stretch-button">Stretch</button>
+    <br>
+    <!-- 4j -->
+    <button class="shadow-button">Shadow</button>
+    <br>
+    <!-- 4k -->
+    <button class="number-button">One</button>
+    <button class="number-button">Two</button>
+    <button class="number-button">Three</button>
     <br>
 </body>
 
