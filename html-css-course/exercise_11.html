@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>exercise 11</title>
+    <style>
+        .blue-box {
+            background-color: lightblue;
+        }
+
+        .pink-box {
+            background-color: lightpink;
+        }
+
+        .ex-11a-grid {
+            display: grid;
+            grid-template-columns: 200px 75px;
+            margin-bottom: 50px;
+        }
+
+        .ex-11b-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+            margin-bottom: 50px;
+        }
+
+        .ex-11c-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+            margin-bottom: 50px;
+        }
+
+        .ex-11d-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+            margin-bottom: 50px;
+        }
+
+        .ex-11d {
+            width: 100%;
+            /* height: 300px; */
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 6px;
+            border-color: rgb(195, 193, 193);
+            margin-right: 10px;
+        }
+
+        .ex-11d-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px;
+        }
+
+        .ex-11d-name {
+            font-weight: bold;
+            margin-left: 4px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .ex-11d-profile {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .ex-11d-portrait {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-left: 4px;
+            margin-right: 0;
+        }
+
+        .ex-11d-portrait-img {
+            width: 30px;
+            border-radius: 50px;
+        }
+
+        .ex-11d-friends {
+            display: inline-block;
+            width: 130px;
+            height: 40px;
+            margin-left: 0;
+            vertical-align: top;
+        }
+
+        .ex-11d-desc {
+            color: gray;
+            margin-bottom: 0;
+            margin-top: 7px;
+        }
+
+        .ex-11d-button {
+            font-size: 14px;
+            color: white;
+            background-color: rgb(38, 134, 252);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 0;
+            border-radius: 4px;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ex-11a-grid">
+        <div class="blue-box">200px</div>
+        <div class="pink-box">75px</div>
+    </div>
+
+    <div class="ex-11b-grid">
+        <div class="blue-box">50px</div>
+        <div class="pink-box">1fr</div>
+        <div class="blue-box">75px</div>
+
+    </div>
+
+    <div class="ex-11c-grid">
+        <div class="pink-box">1fr</div>
+        <div class="pink-box">1fr</div>
+        <div class="pink-box">1fr</div>
+        <div class="pink-box">1fr</div>
+        <div class="pink-box">1fr</div>
+        <div class="pink-box">1fr</div>
+        <div class="pink-box">1fr</div>
+        <div class="pink-box">1fr</div>
+    </div>
+
+    <div class="ex-11d-grid">
+        <div class="ex-11d">
+            <div>
+                <img class="ex-11d-img" src="thumbnails/cat-1.jpeg">
+            </div>
+            <div>
+                <p class="ex-11d-name">Oliver</p>
+            </div>
+            <div class="ex-11d-profile">
+                <div class="ex-11d-portrait">
+                    <img class="ex-11d-portrait-img" src="thumbnails/channel-1.jpeg">
+                </div>
+                <div class="ex-11d-friends">
+                    <p class="ex-11d-desc">2 mutual friends</p>
+                </div>
+            </div>
+            <div>
+                <button class="ex-11d-button">Add Friend</button>
+            </div>
+        </div>
+        <div class="ex-11d">
+            <div>
+                <img class="ex-11d-img" src="thumbnails/cat-2.jpeg">
+            </div>
+            <div>
+                <p class="ex-11d-name">Oliver</p>
+            </div>
+            <div class="ex-11d-profile">
+                <div class="ex-11d-portrait">
+                    <img class="ex-11d-portrait-img" src="thumbnails/channel-1.jpeg">
+                </div>
+                <div class="ex-11d-friends">
+                    <p class="ex-11d-desc">2 mutual friends</p>
+                </div>
+            </div>
+            <div>
+                <button class="ex-11d-button">Add Friend</button>
+            </div>
+        </div>
+        <div class="ex-11d">
+            <div>
+                <img class="ex-11d-img" src="thumbnails/cat-3.jpeg">
+            </div>
+            <div>
+                <p class="ex-11d-name">Oliver</p>
+            </div>
+            <div class="ex-11d-profile">
+                <div class="ex-11d-portrait">
+                    <img class="ex-11d-portrait-img" src="thumbnails/channel-1.jpeg">
+                </div>
+                <div class="ex-11d-friends">
+                    <p class="ex-11d-desc">2 mutual friends</p>
+                </div>
+            </div>
+            <div>
+                <button class="ex-11d-button">Add Friend</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
