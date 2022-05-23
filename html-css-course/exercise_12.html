@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>exercise 12</title>
+    <style>
+        .ex-12 {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .ex-12a-1 {
+            width: 200px;
+            background-color: lightblue;
+        }
+
+        .ex-12a-2 {
+            width: 75px;
+            background-color: lightpink;
+        }
+
+        .ex-12b-1 {
+            width: 50px;
+            background-color: lightblue;
+        }
+
+        .ex-12b-2 {
+            flex: 1;
+            background-color: lightpink;
+        }
+
+        .ex-12b-3 {
+            width: 75px;
+            background-color: lightblue;
+        }
+
+
+        .ex-12c {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #000;
+        }
+
+        .ex-12c-1 {
+            background-color: lightpink;
+        }
+
+        .ex-12d {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            border-color: gray;
+            border-width: 1px;
+            border-style: solid;
+            align-items: center;
+        }
+
+        .ex-12d-1 {
+            background-color: lightpink;
+        }
+
+        .ex-12e {
+            margin-top: 30px;
+            border-color: rgb(209, 207, 207);
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 4px;
+            /* width: 1000px; */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .ex-12e-row {
+            display: flex;
+            justify-content: space-between;
+            height: 35px;
+            align-items: center;
+        }
+
+        .ex-12e-title {
+            font-size: 18px;
+        }
+
+        .ex-12e-button {
+            font-size: 18px;
+            background-color: rgb(57, 149, 248);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .ex-12f {
+            margin-top: 30px;
+            border: none;
+            border-radius: 4px;
+            background-color: purple;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 60px;
+            /* align-items: center; */
+            font-family: Arial;
+        }
+
+        .ex-12f-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .ex-12f-input {
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            height: 30px;
+            padding-left: 20px;
+            width: 100%;
+        }
+
+        .ex-12f-button {
+            font-size: 16px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 4px;
+            border-color: white;
+            background-color: purple;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .ex-12f-left {
+            width: 50px;
+        }
+
+        .ex-12f-middle {
+            flex: 1;
+            max-width: 1000px;
+            margin-left: 30px;
+            margin-right: 50px;
+        }
+
+        .ex-12f-right {
+            width: 120px;
+        }
+
+        .ex-12g {
+            margin-top: 30px;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: gainsboro;
+            border-width: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 400px;
+        }
+
+
+        .ex-12g-row {
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* height: 60px; */
+            font-family: Arial;
+        }
+
+        .ex-12g-left {
+            width: 75px;
+        }
+
+        .ex-12g-middle {
+            flex: 1;
+        }
+
+        .ex-12g-right {
+            width: 75px;
+        }
+
+        .ex-12g-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .ex-12g p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .ex-12g-title {
+            font-size: 16px;
+        }
+
+        .ex-12g-desc {
+            color: gray;
+        }
+
+        .ex-12g-button {
+            font-size: 18px;
+            background-color: rgb(57, 149, 248);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ex-12">
+        <div class="ex-12a-1">200px</div>
+        <div class="ex-12a-2">75px</div>
+    </div>
+
+    <div class="ex-12">
+        <div class="ex-12b-1">50px</div>
+        <div class="ex-12b-2">flex: 1</div>
+        <div class="ex-12b-3">75px</div>
+    </div>
+
+    <div class="ex-12c">
+        <div class="ex-12c-1">item1</div>
+        <div class="ex-12c-1">item2</div>
+        <div class="ex-12c-1">item3</div>
+        <div class="ex-12c-1">item4</div>
+    </div>
+
+    <div class="ex-12d">
+        <div class="ex-12d-1">item1</div>
+        <div class="ex-12d-1">item2</div>
+    </div>
+
+    <div class="ex-12e">
+        <div class="ex-12e-row">
+            <span class="ex-12e-title">Home</span>
+            <button class="ex-12e-button">14</button>
+        </div>
+        <div class="ex-12e-row">
+            <span class="ex-12e-title">Notifications</span>
+            <button class="ex-12e-button">3</button>
+        </div>
+        <div class="ex-12e-row">
+            <span class="ex-12e-title">Messages</span>
+            <button class="ex-12e-button">5</button>
+        </div>
+    </div>
+
+    <div class="ex-12f">
+        <div class="ex-12f-left">
+            <span class="ex-12f-title">Home</span>
+        </div>
+        <div class="ex-12f-middle">
+            <input class="ex-12f-input" placeholder="Search">
+        </div>
+        <div class="ex-12f-right">
+            <button class="ex-12f-button">Download</button>
+        </div>
+    </div>
+
+    <div class="ex-12g">
+        <div class="ex-12g-row">
+            <div class="ex-12g-left">
+                <img class="ex-12g-img" src="thumbnails/cat-1.jpeg">
+            </div>
+            <div class="ex-12g-middle">
+                <p class="ex-12g-title">Oliver</p>
+                <p class="ex-12g-desc">The cat</p>
+                <p class="ex-12g-desc">Popular</p>
+            </div>
+            <div class="ex-12g-right">
+                <button class="ex-12g-button">Follow</button>
+            </div>
+        </div>
+        <div class="ex-12g-row">
+            <div class="ex-12g-left">
+                <img class="ex-12g-img" src="thumbnails/cat-2.jpeg">
+            </div>
+            <div class="ex-12g-middle">
+                <p class="ex-12g-title">Mimi</p>
+                <p class="ex-12g-desc">Sleepy cat</p>
+                <p class="ex-12g-desc">Popular</p>
+            </div>
+            <div class="ex-12g-right">
+                <button class="ex-12g-button">Follow</button>
+            </div>
+        </div>
+        <div class="ex-12g-row">
+            <div class="ex-12g-left">
+                <img class="ex-12g-img" src="thumbnails/cat-3.jpeg">
+            </div>
+            <div class="ex-12g-middle">
+                <p class="ex-12g-title">Rex</p>
+                <p class="ex-12g-desc">Happy bulldog</p>
+                <p class="ex-12g-desc">Popular</p>
+            </div>
+            <div class="ex-12g-right">
+                <button class="ex-12g-button">Follow</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
