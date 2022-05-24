@@ -14,7 +14,7 @@ https://github.com/SuperSimpleDev/html-css-course-2022/tree/main/1-exercise-solu
 
  - box model
  - display: block/inline-block/inline
- - div
- - nested layout
+ - div & nested layout
  - grid
- - flexbox
+ - flexbox & nested flexbox
+ - position
