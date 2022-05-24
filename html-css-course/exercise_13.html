@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>exercise 13</title>
+    <style>
+        .ex-13a {
+            margin-top: 30px;
+            height: 50px;
+            display: flex;
+            font-family: Arial;
+        }
+
+        .ex-13a-1 {
+            background: lightpink;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .ex-13a-item {
+            background-color: #000;
+            color: white;
+        }
+
+        .ex-13a-2 {
+            background: lightblue;
+            width: 200px;
+        }
+
+        .ex-13b {
+            margin-top: 30px;
+            height: 50px;
+            display: flex;
+        }
+
+        .ex-13b-1 {
+            background: lightpink;
+            width: 100px;
+        }
+
+        .ex-13b-row1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .ex-13b-row2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ex-13b-item1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .ex-13b-item2 {
+            background-color: #000;
+            color: white;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .ex-13b-2 {
+            background: lightblue;
+            width: 200px;
+        }
+
+        .ex-13c {
+            margin-top: 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: rgb(222, 221, 221);
+            width: 380px;
+        }
+
+        .ex-13c-head {
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .ex-13c-head p {
+            font-size: 14px;
+            color: gray;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .ex-13c-body {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .ex-13c-body p {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        .ex-13c-left {
+            width: 60px;
+        }
+
+        .ex-13c-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .ex-13c-right {
+            width: 300px;
+        }
+
+        .ex-13c-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ex-13c-name {
+            font-weight: bold;
+        }
+
+        .ex-13c-time {
+            color: gray;
+            font-size: 12px;
+        }
+
+        .ex-13c-title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .ex-13c-desc {
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ex-13a">
+        <div class="ex-13a-1">
+            <p class="ex-13a-item">item1</p>
+        </div>
+        <div class="ex-13a-2"></div>
+    </div>
+
+    <div class="ex-13b">
+        <div class="ex-13b-1"></div>
+        <div class="ex-13b-2">
+            <div class="ex-13b-row1">
+                <p class="ex-13b-item1">row1</p>
+            </div>
+            <div class="ex-13b-row2">
+                <p class="ex-13b-item2">row2</p>
+                <p class="ex-13b-item2">row2</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ex-13c">
+        <div class="ex-13c-head">
+            <p>ALL INBOXES</p>
+        </div>
+        <div class="ex-13c-body">
+            <div class="ex-13c-left">
+                <img class="ex-13c-img" src="thumbnails/cat-1.jpeg">
+            </div>
+            <div class="ex-13c-right">
+                <div class="ex-13c-row">
+                    <span class="ex-13c-name">Chewy Promotions</span>
+                    <span class="ex-13c-time">4:58 PM</span>
+                </div>
+                <p class="ex-13c-title">Biggest sales of the year!</p>
+                <p class="ex-13c-desc">Hey there! We're writing to tell about our...</p>
+            </div>
+        </div>
+        <div class="ex-13c-body">
+            <div class="ex-13c-left">
+                <img class="ex-13c-img" src="thumbnails/cat-2.jpeg">
+            </div>
+            <div class="ex-13c-right">
+                <div class="ex-13c-row">
+                    <span class="ex-13c-name">Best Buy</span>
+                    <span class="ex-13c-time">12:32 PM</span>
+                </div>
+                <p class="ex-13c-title">Your Best Buy eReceipt</p>
+                <p class="ex-13c-desc">Thank you for shopping at Best Buy. here is...</p>
+            </div>
+        </div>
+        <div class="ex-13c-body">
+            <div class="ex-13c-left">
+                <img class="ex-13c-img" src="thumbnails/cat-3.jpeg">
+            </div>
+            <div class="ex-13c-right">
+                <div class="ex-13c-row">
+                    <span class="ex-13c-name">Netflix</span>
+                    <span class="ex-13c-time">9:00 AM</span>
+                </div>
+                <p class="ex-13c-title">Here's what's coming soon to Netflix</p>
+                <p class="ex-13c-desc">Brand new movies and shows, old favorites...</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
