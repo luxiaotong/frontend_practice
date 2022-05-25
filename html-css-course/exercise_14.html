@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>exercise 13</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .ex-14a {
+            color: white;
+            background-color: #000;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .ex-14b {
+            color: white;
+            background-color: green;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+        }
+
+        .ex-14c {
+            background-color: lightgray;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .ex-14d {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ex-14d-modal {
+            width: 400px;
+            height: 100px;
+            background-color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-family: Arial;
+        }
+
+        .ex-14d-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .ex-14d-desc {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .ex-14d-button {
+            font-size: 14px;
+            background-color: lightgrey;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 2px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
+        .ex-14e {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 50px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .ex-14e-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .ex-14e-img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+
+        .ex-14e-button1 {
+            background-color: rgb(67, 120, 255);
+            color: white;
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .ex-14e-button2 {
+            background-color: rgb(240, 240, 240);
+            font-weight: bold;
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+
+
+        .ex-14f-1 {
+            background-color: #000;
+            position: fixed;
+            top: 50px;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ex-14f-img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .ex-14f-2 {
+            background-color: rgb(45, 45, 45);
+            position: fixed;
+            top: 50px;
+            bottom: 0;
+            left: 60px;
+            width: 160px;
+            font-family: Arial;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .ex-14f-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .ex-14f-title {
+            color: white;
+            font-size: 12px;
+        }
+
+        .ex-14f-plus {
+            color: lightgray;
+            font-size: 24px;
+        }
+
+        .ex-14f-topic {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ex-14c">
+    </div>
+
+    <div class="ex-14b">
+        right sidebar
+    </div>
+
+    <div class="ex-14a">
+        bottom-right
+    </div>
+
+    <div class="ex-14d">
+        <div class="ex-14d-modal">
+            <p class="ex-14d-title">Modal Title</p>
+            <p class="ex-14d-desc">This is a modal</p>
+            <button class="ex-14d-button">Close</button>
+        </div>
+    </div>
+
+    <div class="ex-14e">
+        <div class="ex-14e-left">
+            <img class="ex-14e-img" src="thumbnails/cat-1.jpeg">
+            <span>Oliver Cat</span>
+        </div>
+        <div class="ex-14e-right">
+            <button class="ex-14e-button1">Add Friend</button>
+            <button class="ex-14e-button2">Message</button>
+        </div>
+    </div>
+
+    <div class="ex-14f-1">
+        <img class="ex-14f-img" src="thumbnails/cat-1.jpeg">
+        <img class="ex-14f-img" src="thumbnails/cat-2.jpeg">
+        <img class="ex-14f-img" src="thumbnails/cat-3.jpeg">
+    </div>
+    <div class="ex-14f-2">
+        <div class="ex-14f-row">
+            <span class="ex-14f-title">INFO</span>
+            <span class="ex-14f-plus">+</span>
+        </div>
+        <div class="ex-14f-topic">
+            <p># new-videos</p>
+            <p># updates</p>
+            <p># faq</p>
+        </div>
+    </div>
+</body>
+
+</html>
