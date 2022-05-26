@@ -18,3 +18,5 @@ https://github.com/SuperSimpleDev/html-css-course-2022/tree/main/1-exercise-solu
  - grid
  - flexbox & nested flexbox
  - position: fixed/relative/absolute
+ - media query
+ - inheritance
